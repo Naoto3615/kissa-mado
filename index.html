@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kissa Mado | 静かな喫茶店</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">Kissa Mado</a>
+      <button class="menu-btn" aria-label="メニュー">☰</button>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#story">Story</a>
+        <a href="#access">Access</a>
+        <a href="#reserve">Reserve</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <p class="eyebrow">SINCE 1985</p>
+        <h1>雨の日が似合う、街角の喫茶店。</h1>
+        <p>
+          深煎りのコーヒーと、焼きたてのプリン。静かに仕事したい日にも、ゆっくり話したい日にも。
+        </p>
+        <a class="cta" href="#reserve">席を予約する</a>
+      </section>
+
+      <section class="menu-grid reveal" id="menu">
+        <article>
+          <h2>Blend Coffee</h2>
+          <p>香りを重視した深煎り。ミルクとの相性もよい定番ブレンド。</p>
+          <strong>¥580</strong>
+        </article>
+        <article>
+          <h2>House Pudding</h2>
+          <p>卵のコクを感じる固め食感。ほろ苦いカラメルで仕上げます。</p>
+          <strong>¥620</strong>
+        </article>
+        <article>
+          <h2>Morning Plate</h2>
+          <p>トースト・サラダ・季節のスープ。朝9時〜11時限定。</p>
+          <strong>¥890</strong>
+        </article>
+      </section>
+
+      <section class="story reveal" id="story">
+        <div>
+          <p class="eyebrow">OUR STORY</p>
+          <h2>時間の流れを、少しだけ遅くする場所。</h2>
+        </div>
+        <p>
+          木のカウンター、低い照明、レコードから流れる音。Kissa Mado は "余白のある時間" を提供するために作られました。
+          フリーランスの作業にも使いやすいよう、全席コンセントと Wi-Fi を完備しています。
+        </p>
+      </section>
+
+      <section class="access reveal" id="access">
+        <h2>Access</h2>
+        <ul>
+          <li>東京都渋谷区神南 2-10-3</li>
+          <li>平日 9:00-21:00 / 土日 8:30-21:00</li>
+          <li>JR 渋谷駅 徒歩7分</li>
+        </ul>
+      </section>
+
+      <section class="reserve reveal" id="reserve">
+        <h2>ご予約</h2>
+        <p>打ち合わせ利用は2名席・4名席を選択できます。下記からお問い合わせください。</p>
+        <a href="mailto:hello@kissa-mado.jp">hello@kissa-mado.jp</a>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="year"></span> Kissa Mado</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
