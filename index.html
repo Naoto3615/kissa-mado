@@ -10,76 +10,95 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    <div class="bg-layer"></div>
+    <header class="site-header container">
       <a class="brand" href="#top">Kissa Mado</a>
-      <button class="menu-btn" aria-label="メニュー">☰</button>
-      <nav>
+      <button class="menu-toggle" aria-expanded="false" aria-label="メニュー">☰</button>
+      <nav class="nav-links">
         <a href="#menu">Menu</a>
-        <a href="#story">Story</a>
-        <a href="#access">Access</a>
+        <a href="#experience">Experience</a>
+        <a href="#voices">Voices</a>
         <a href="#reserve">Reserve</a>
       </nav>
     </header>
 
-    <main id="top">
+    <main id="top" class="container">
       <section class="hero reveal">
-        <p class="eyebrow">SINCE 1985</p>
-        <h1>雨の日が似合う、街角の喫茶店。</h1>
-        <p>
-          深煎りのコーヒーと、焼きたてのプリン。静かに仕事したい日にも、ゆっくり話したい日にも。
-        </p>
-        <a class="cta" href="#reserve">席を予約する</a>
-      </section>
-
-      <section class="menu-grid reveal" id="menu">
-        <article>
-          <h2>Blend Coffee</h2>
-          <p>香りを重視した深煎り。ミルクとの相性もよい定番ブレンド。</p>
-          <strong>¥580</strong>
-        </article>
-        <article>
-          <h2>House Pudding</h2>
-          <p>卵のコクを感じる固め食感。ほろ苦いカラメルで仕上げます。</p>
-          <strong>¥620</strong>
-        </article>
-        <article>
-          <h2>Morning Plate</h2>
-          <p>トースト・サラダ・季節のスープ。朝9時〜11時限定。</p>
-          <strong>¥890</strong>
-        </article>
-      </section>
-
-      <section class="story reveal" id="story">
-        <div>
-          <p class="eyebrow">OUR STORY</p>
-          <h2>時間の流れを、少しだけ遅くする場所。</h2>
+        <span class="badge">SINCE 1985</span>
+        <div class="hero-grid">
+          <div>
+            <h1>雨の日が似合う、街角の喫茶店。</h1>
+            <p class="lead">
+              深煎りコーヒーとクラシックプリンを中心に、静かな作業時間と会話の時間を両立できる空間を設計しています。
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#reserve">席を予約する</a>
+              <a class="btn ghost" href="#menu">メニューを見る</a>
+            </div>
+          </div>
+          <aside class="hero-stats">
+            <article><strong data-count="41" data-suffix="年">0年</strong><span>営業年数</span></article>
+            <article><strong data-count="12" data-suffix="席">0席</strong><span>電源付きカウンター</span></article>
+            <article><strong data-count="93" data-suffix="%">0%</strong><span>リピーター比率</span></article>
+          </aside>
         </div>
-        <p>
-          木のカウンター、低い照明、レコードから流れる音。Kissa Mado は "余白のある時間" を提供するために作られました。
-          フリーランスの作業にも使いやすいよう、全席コンセントと Wi-Fi を完備しています。
-        </p>
       </section>
 
-      <section class="access reveal" id="access">
-        <h2>Access</h2>
-        <ul>
-          <li>東京都渋谷区神南 2-10-3</li>
-          <li>平日 9:00-21:00 / 土日 8:30-21:00</li>
-          <li>JR 渋谷駅 徒歩7分</li>
-        </ul>
+      <section class="section reveal" id="menu">
+        <div class="section-head">
+          <span class="eyebrow">SIGNATURE MENU</span>
+          <h2>定番メニュー</h2>
+        </div>
+        <div class="card-grid three">
+          <article class="card"><h3>Blend Coffee</h3><p>香りを重視した深煎りブレンド。</p><strong>¥580</strong></article>
+          <article class="card"><h3>House Pudding</h3><p>固め食感とビターカラメルの王道プリン。</p><strong>¥620</strong></article>
+          <article class="card"><h3>Morning Plate</h3><p>トースト、サラダ、スープの朝限定プレート。</p><strong>¥890</strong></article>
+        </div>
       </section>
 
-      <section class="reserve reveal" id="reserve">
-        <h2>ご予約</h2>
-        <p>打ち合わせ利用は2名席・4名席を選択できます。下記からお問い合わせください。</p>
-        <a href="mailto:hello@kissa-mado.jp">hello@kissa-mado.jp</a>
+      <section class="section reveal" id="experience">
+        <div class="section-head">
+          <span class="eyebrow">EXPERIENCE</span>
+          <h2>過ごし方に合わせた空間設計</h2>
+        </div>
+        <div class="process-list">
+          <article><h3>Work Hour</h3><p>朝は作業利用が中心。全席 Wi-Fi と電源を完備。</p></article>
+          <article><h3>Slow Afternoon</h3><p>午後は読書と会話のための照明設計に切り替え。</p></article>
+          <article><h3>Night Relax</h3><p>夜はレコードの音量を上げ、静かな余韻を演出。</p></article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="voices">
+        <div class="section-head">
+          <span class="eyebrow">CUSTOMER VOICES</span>
+          <h2>お客様の声</h2>
+        </div>
+        <div class="review-grid">
+          <blockquote>「打ち合わせでも作業でも使いやすく、滞在しやすい雰囲気です。」</blockquote>
+          <blockquote>「プリンとコーヒーの相性が良く、つい長居してしまいます。」</blockquote>
+          <blockquote>「朝の時間帯が特に静かで集中できます。」</blockquote>
+        </div>
+      </section>
+
+      <section class="section reveal" id="reserve">
+        <div class="contact-panel">
+          <div>
+            <span class="eyebrow">RESERVE</span>
+            <h2>ご予約・お問い合わせ</h2>
+            <p>2名席・4名席の事前確保が可能です。打ち合わせ利用にも対応します。</p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="お名前" required />
+            <input type="email" placeholder="メールアドレス" required />
+            <textarea placeholder="ご希望日時・人数"></textarea>
+            <button type="submit" class="btn primary">送信する</button>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <small>© <span id="year"></span> Kissa Mado</small>
-    </footer>
-
+    <footer class="container">© <span id="year"></span> Kissa Mado</footer>
+    <div class="toast" id="toast">送信ありがとうございます。24時間以内にご返信します。</div>
     <script src="app.js"></script>
   </body>
 </html>
