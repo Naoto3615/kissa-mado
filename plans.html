@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kissa Mado | Plans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="extra-page">
+    <div class="bg-layer"></div>
+    <header class="site-header container">
+      <a class="brand" href="index.html">Kissa Mado</a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="メニュー">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="subhero reveal">
+        <span class="eyebrow">PLANS</span>
+        <h1>時間帯と目的に合わせた利用プラン</h1>
+        <p>作業、打ち合わせ、リラックス利用の3軸で最適な使い方を提案します。</p>
+      </section>
+
+      <section class="section reveal" data-pricing>
+        <div class="pricing-head">
+          <h2>プラン一覧</h2>
+          <div class="pricing-mode">
+            <button class="mode-btn active" type="button" data-mode="monthly">Monthly</button>
+            <button class="mode-btn" type="button" data-mode="yearly">Yearly</button>
+          </div>
+        </div>
+
+        <div class="pricing-cards">
+          <article class="price-card">
+            <h3>Morning Work</h3>
+            <p>朝の作業利用に最適な1ドリンク付きプラン。</p>
+            <strong>¥<span data-price data-monthly="2800" data-yearly="30000">2800</span></strong>
+          </article>
+          <article class="price-card">
+            <h3>Cafe Meeting</h3>
+            <p>2時間の打ち合わせ席確保と軽食セット。</p>
+            <strong>¥<span data-price data-monthly="4200" data-yearly="46000">4200</span></strong>
+          </article>
+          <article class="price-card">
+            <h3>Night Relax</h3>
+            <p>夜利用向けのデザート付きゆったりプラン。</p>
+            <strong>¥<span data-price data-monthly="3200" data-yearly="35000">3200</span></strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <span class="eyebrow">ESTIMATE</span>
+          <h2>簡易見積もり</h2>
+        </div>
+        <div class="calc-box">
+          <form class="calc-form">
+            <label>
+              プラン単価(円)
+              <select name="unit_price">
+                <option value="2800">Morning Work</option>
+                <option value="4200">Cafe Meeting</option>
+                <option value="3200">Night Relax</option>
+              </select>
+            </label>
+            <label>
+              数量
+              <input type="number" name="quantity" min="1" value="1" />
+            </label>
+            <label>
+              期間(月)
+              <input type="number" name="months" min="1" value="3" />
+            </label>
+            <button type="submit" class="btn primary">見積もる</button>
+          </form>
+          <p class="calc-result" aria-live="polite">見積もり結果: -</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">© <span id="year"></span> Kissa Mado</footer>
+    <div class="toast" id="toast">更新内容を反映しました。</div>
+    <script src="app.js"></script>
+  </body>
+</html>

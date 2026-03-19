@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kissa Mado | FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="extra-page">
+    <div class="bg-layer"></div>
+    <header class="site-header container">
+      <a class="brand" href="index.html">Kissa Mado</a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="メニュー">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="subhero reveal">
+        <span class="eyebrow">FAQ</span>
+        <h1>よくある質問</h1>
+        <p>お問い合わせ前に、特に多い質問をまとめています。</p>
+      </section>
+
+      <section class="section reveal">
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">電源席は事前予約できますか？</button>
+            <div class="faq-answer">はい。平日10時〜17時の枠は事前予約が可能です。</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">打ち合わせ利用は何名まで対応できますか？</button>
+            <div class="faq-answer">2名席と4名席を用意しています。5名以上は事前相談ください。</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">Wi-Fiの速度はどの程度ですか？</button>
+            <div class="faq-answer">通常利用で動画会議が可能な速度を維持しています。</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="contact-panel">
+          <div>
+            <span class="eyebrow">CONTACT</span>
+            <h2>追加で相談する</h2>
+            <p>質問内容を送信いただければ、担当より回答します。</p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="お名前" required />
+            <input type="email" placeholder="メールアドレス" required />
+            <textarea placeholder="質問内容"></textarea>
+            <button type="submit" class="btn primary">送信する</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">© <span id="year"></span> Kissa Mado</footer>
+    <div class="toast" id="toast">お問い合わせありがとうございます。順次返信します。</div>
+    <script src="app.js"></script>
+  </body>
+</html>
